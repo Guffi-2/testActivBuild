@@ -199,7 +199,40 @@ header{
   padding: none;
 }
 
+@media (min-width: 640px) {
+  body{
+    display: none;
+  }
+  h2 { 
+    font-size: 1.5vw;
+  }
+  h4{
+    font-size: 1.3vw;
+  }
+  .logo {
+  height: 5em;
+  will-change: filter;
+  transition: filter 300ms;
+  }
+  #about_m{
+    visibility: hidden;
+  }
+  #news_m{
+    visibility: hidden;
+  }
+  #soc-seti_m{
+    visibility: hidden;
+  }
+  mobileMenu{
+    visibility: hidden;
+    display: none;
+  }
+}
+
 @media (min-width: 1200px) {
+  body{
+    display: none;
+  }
   h2 { 
     font-size: 1.5vw;
   }
@@ -243,6 +276,7 @@ header{
     display: none;
   }
 }
+
 @media (min-width: 320px) and (max-width: 899px) {
   mobileMenu{
     display: flex;
@@ -370,8 +404,12 @@ news_p{
   height: 10px;
   display: flex;
   /* align-items: center; */
+
+  
   padding-top: 12px;
   flex-wrap: wrap;
+  
+  
   /* justify-content: center;*/
 }
 .about_p{
@@ -379,8 +417,14 @@ news_p{
   height: 10px;
   display: flex;
   /* align-items: center; */
+
+
+  
   padding-top: 12px;
   flex-wrap: wrap;
+  
+
+
   /* justify-content: center;*/
 }
 .news_title{
@@ -403,91 +447,44 @@ news_p{
   padding-right: 20px;
 }
 }
-/* 
-
-
-ОСНОВНАЯ ЧАСТЬ СТИЛЕЙ САЙТА
-
-
-*/
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-  margin: none;
-  padding: none;
-}
-header{
-  background-color: rgb(241, 241, 241);
-}
-* {
-  margin: 0;
-  padding: 0;
- }
- html, body{
-  background-color: #242424;
-  color: #ebebeb;
-  max-width: 100%;
-  height: 100%;
-  padding: 0;
-  margin: 0;
-}
-a{
-  color: #ebebeb;
-}
-header{
-  background-color: #292929;
-  width: 100%;
-  height: 85px;
-  display: flex;
-  justify-content: left;
-  align-items: center;
-  margin: none;
-  padding: none;
-}
-#app {
-  margin: none;
-}
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  mobileMenu a{
-  text-decoration: none;
-  color: #213547;
-}
-  html, body {
-  background: #ffffff;
-  color: #213547;
-}
-  header{
-    background-color: rgb(241, 241, 241);
-  }
-  mobileMenu{
-  background-color: #eeeeee;
-  color: #213547;
-
+@media (min-width: 414px) {
+.post_1{
+  width: 95%;
+    height: 530px;
+    background-color: #373737;
+    border-radius: 30px;
+    margin-right: 0px;
 }
 .post_2{
-  background-color: rgb(243, 243, 243);
-}
-.post_1{
-  background-color: #f3f3f3;
+  width: 95%;
+    height: 530px;
+    background-color: #373737;
+    border-radius: 30px;
+    margin-right: 0px;
 }
 }
 
-@media (min-width: 416px) {
+@media (min-width: 375) {
+.post_1{
+  width: 95%;
+    height: 500px;
+    background-color: #373737;
+    border-radius: 30px;
+    margin-right: 0px;
+}
+.post_2{
+  width: 95%;
+    height: 530px;
+    background-color: #373737;
+    border-radius: 30px;
+    margin-right: 0px;
+}
+}
+
+@media (min-width: 430px) {
+  body{
+    display: none;
+  }
   mobileMenu{
     display: flex;
   }
@@ -557,103 +554,6 @@ header{
   border-radius: 30px;
   margin-right: 0px;
 }
-/* 
-
-
-ОСНОВНАЯ ЧАСТЬ СТИЛЕЙ САЙТА
-
-
-*/
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-  margin: none;
-  padding: none;
-}
-header{
-  background-color: rgb(241, 241, 241);
-}
-* {
-  margin: 0;
-  padding: 0;
- }
- html, body{
-  background-color: #242424;
-  color: #ebebeb;
-  max-width: 100%;
-  height: 100%;
-  padding: 0;
-  margin: 0;
-}
-a{
-  color: #ebebeb;
-}
-header{
-  background-color: #292929;
-  width: 100%;
-  height: 85px;
-  display: flex;
-  justify-content: left;
-  align-items: center;
-  margin: none;
-  padding: none;
-}
-#app {
-  margin: none;
-}
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  mobileMenu a{
-  text-decoration: none;
-  color: #213547;
-}
-  html, body {
-  background: #ffffff;
-  color: #213547;
-}
-  header{
-    background-color: rgb(241, 241, 241);
-  }
-  mobileMenu{
-  background-color: #eeeeee;
-  color: #213547;
-
-}
-.post_2{
-  background-color: rgb(243, 243, 243);
-}
-.post_1{
-  background-color: #f3f3f3;
-}
-}
-}
-
-
-
-
-
-@media (min-width: 450px) {
-.post_1{
-  width: 95%;
-  height: 550px;
-  background-color: #373737;
-  border-radius: 30px;
-  margin-right: 0px;
-}
 }
 /* 
 
@@ -738,106 +638,4 @@ header{
   background-color: #f3f3f3;
 }
 }
-
-
-
-
-
-
-
-
-@media (min-width: 500px) {
-.post_1{
-  width: 95%;
-  height: 580px;
-  background-color: #373737;
-  border-radius: 30px;
-  margin-right: 0px;
-}
-/* 
-
-
-ОСНОВНАЯ ЧАСТЬ СТИЛЕЙ САЙТА
-
-
-*/
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-  margin: none;
-  padding: none;
-}
-header{
-  background-color: rgb(241, 241, 241);
-}
-* {
-  margin: 0;
-  padding: 0;
- }
- html, body{
-  background-color: #242424;
-  color: #ebebeb;
-  max-width: 100%;
-  height: 100%;
-  padding: 0;
-  margin: 0;
-}
-a{
-  color: #ebebeb;
-}
-header{
-  background-color: #292929;
-  width: 100%;
-  height: 85px;
-  display: flex;
-  justify-content: left;
-  align-items: center;
-  margin: none;
-  padding: none;
-}
-#app {
-  margin: none;
-}
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  mobileMenu a{
-  text-decoration: none;
-  color: #213547;
-}
-  html, body {
-  background: #ffffff;
-  color: #213547;
-}
-  header{
-    background-color: rgb(241, 241, 241);
-  }
-  mobileMenu{
-  background-color: #eeeeee;
-  color: #213547;
-
-}
-.post_2{
-  background-color: rgb(243, 243, 243);
-}
-.post_1{
-  background-color: #f3f3f3;
-}
-}
-}
-
-
 </style>
