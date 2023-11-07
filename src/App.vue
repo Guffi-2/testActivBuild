@@ -14,7 +14,7 @@
       <h4 id="soc-seti_m">Соц-сети</h4>
   </mobileMenu>
   <main>
-              <div class="news_title">
+  <div class="news_title">
     <h2 id="news_p">Новости</h2>
   </div>
   <news>
@@ -284,7 +284,7 @@ header{
   footer{
     margin-top: 1283px;
     background-color: #373737;
-    width: 100%;
+    width: 90%;
     height: 100px;
     padding: 10px;
   }
