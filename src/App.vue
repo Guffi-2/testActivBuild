@@ -57,6 +57,9 @@
     </div>
   </about>
 </main>
+<footer>
+  <h2>buil version 0.0.2</h2>
+</footer>
 </template>
 
 <style>
@@ -278,6 +281,13 @@ header{
 }
 
 @media (min-width: 320px) and (max-width: 899px) {
+  footer{
+    margin-top: 1283px;
+    background-color: #373737;
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+  }
   mobileMenu{
     display: flex;
   }
@@ -618,6 +628,9 @@ header{
   mobileMenu a{
   text-decoration: none;
   color: #213547;
+}
+footer{
+    background-color: #f3f3f3;
 }
   html, body {
   background: #ffffff;
