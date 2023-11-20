@@ -1,4 +1,8 @@
 <template>
+    <div class="animation_screen">
+    
+    </div>
+
     <header>
     <img src="./On.png" class="logo vue" alt="Vue logo" />
     <h2>Актив школы 211</h2>
@@ -11,7 +15,7 @@
   <mobileMenu>
       <h4 id="news_m"><a href="#news_p">Новоcти</a></h4>
       <h4 id="about_m"><a href="#about_p_o_nas">О нас</a></h4>
-      <h4 id="soc-seti_m">Соц-сети</h4>
+      <h4 id="soc-seti_m"><a onclick="alert('в данной версии пока что не работает🛠️')">Соц-сети</a></h4>
   </mobileMenu>
   <main>
   <div class="news_title">
@@ -58,7 +62,10 @@
   </about>
 </main>
 <footer>
-  <h2>buil version 0.0.2</h2>
+  <h2>buil version 0.0.3</h2>
+  <button class="btn_about" onclick="alert('были добавлены тени для постов по нажатию/наведению')">
+    О версии 👆
+  </button>
 </footer>
 </template>
 
@@ -281,13 +288,24 @@ header{
 }
 
 @media (min-width: 320px) and (max-width: 899px) {
+
   footer{
     margin-top: 1283px;
     background-color: #373737;
-    width: 90%;
+    width: 95%;
     height: 100px;
     padding: 10px;
   }
+
+  .btn_about{
+    border: none;
+    background-color: #2b2b2b;
+    color:rgb(255, 255, 255);
+    border-radius: 30px;
+    width: 80px;
+    height: 20px;
+  }
+
   mobileMenu{
     display: flex;
   }
@@ -337,7 +355,7 @@ header{
   font-size: 1.6rem; 
 }
 #about_p_o_nas{
-  padding-top: 2090px;
+  margin-top: 2090px;
   padding-left: 0px;
   font-size: 1.6rem; 
 }
@@ -356,7 +374,13 @@ header{
   background-color: #373737;
   border-radius: 30px;
   margin-right: 0px;
+  transition: box-shadow 0.3s cubic-bezier(0.4, 0, 1, 1);
 }
+
+.post_1:hover{
+  box-shadow: 0px 8px 18px 0px rgba(0, 0, 0, 0.05), 0px 33px 33px 0px rgba(0, 0, 0, 0.04), 0px 75px 45px 0px rgba(0, 0, 0, 0.03), 0px 134px 53px 0px rgba(0, 0, 0, 0.01), 0px 209px 58px 0px rgba(0, 0, 0, 0.00);
+}
+
 .post_1 h4{
   padding: 15px;
 }
@@ -386,7 +410,13 @@ header{
   border-radius: 30px;
   margin-right: 0px;
   margin-top: 15px;
+  transition: box-shadow 0.3s cubic-bezier(0.4, 0, 1, 1);
 }
+
+.post_2:hover{
+  box-shadow: 0px 8px 18px 0px rgba(0, 0, 0, 0.05), 0px 33px 33px 0px rgba(0, 0, 0, 0.04), 0px 75px 45px 0px rgba(0, 0, 0, 0.03), 0px 134px 53px 0px rgba(0, 0, 0, 0.01), 0px 209px 58px 0px rgba(0, 0, 0, 0.00);
+}
+
 .post_2 h4{
   padding: 15px;
 }
@@ -635,6 +665,10 @@ footer{
   html, body {
   background: #ffffff;
   color: #213547;
+}
+.btn_about{
+    background: #ffffff;
+    color: #213547;
 }
   header{
     background-color: rgb(241, 241, 241);
